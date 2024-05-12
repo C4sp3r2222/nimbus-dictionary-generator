@@ -103,7 +103,7 @@ def merge_dictionaries(dictionary1_path, dictionary2_path, new_dictionary_name):
             total_lines_dict2 = len(lines_dict2)
             total_lines_merged = total_lines_dict1 + total_lines_dict2
 
-            print(Fore.YELLOW + f"[i] Se van a unir los diccionarios:")
+            print(Fore.YELLOW + f"\n[i] Se van a unir los diccionarios:")
             print(f"   [+] {dictionary1_path} -> {total_lines_dict1} líneas")
             print(f"   [+] {dictionary2_path} -> {total_lines_dict2} líneas")
 
@@ -112,10 +112,10 @@ def merge_dictionaries(dictionary1_path, dictionary2_path, new_dictionary_name):
             for line in lines_dict2:
                 f_out.write(line)
 
-        print(Fore.YELLOW + f"[i] El diccionario final tendrá {total_lines_merged} líneas en total.")
-        decision = input(Fore.CYAN + "[+] ¿Desea continuar con la creación del diccionario? (Si/No): " + Fore.RESET).lower()
+        print(Fore.YELLOW + f"\n[i] El diccionario final tendrá {total_lines_merged} líneas en total.")
+        decision = input(Fore.CYAN + "\n[+] ¿Desea continuar con la creación del diccionario? (Si/No): " + Fore.RESET).lower()
         if decision in ['si', 'sí', 's']:
-            print(Fore.GREEN + "[+] Diccionario generado con éxito:", new_dictionary_name + Fore.RESET)
+            print(Fore.GREEN + "\n[+] Diccionario generado con éxito:", new_dictionary_name + Fore.RESET)
         else:
             print(Fore.YELLOW + "[+] Saliendo..." + Fore.RESET)
     except Exception as e:
@@ -167,11 +167,11 @@ def main():
             new_dictionary_name = input(Fore.CYAN + "[+] Nombre del nuevo diccionario (Por defecto: diccionarios_unidos.txt):\n   Ej: diccionarios_unidos.txt\n" + Fore.RESET)
             if not new_dictionary_name:
                 new_dictionary_name = "diccionarios_unidos.txt"
-            dictionary1_path = input(Fore.CYAN + "[+] Dime la ruta del primer diccionario a usar:\n" + Fore.RESET)
-            dictionary2_path = input(Fore.CYAN + "[+] Dime la ruta del segundo diccionario:\n" + Fore.RESET)
+            dictionary1_path = input(Fore.CYAN + "\n[+] Dime la ruta del primer diccionario a usar:\n" + Fore.RESET)
+            dictionary2_path = input(Fore.CYAN + "\n[+] Dime la ruta del segundo diccionario:\n" + Fore.RESET)
             merge_dictionaries(dictionary1_path, dictionary2_path, new_dictionary_name)
         else:
-            print(Fore.RED + "[!] ERROR: Opción no válida." + Fore.RESET)
+            print(Fore.RED + "\n[!] ERROR: Opción no válida." + Fore.RESET)
     except KeyboardInterrupt:
         print(Fore.YELLOW + "\n[+] Saliendo..." + Fore.RESET)
 
