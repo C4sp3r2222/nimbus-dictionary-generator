@@ -20,14 +20,15 @@ Proporciona confirmaciones antes de crear nuevos diccionarios o realizar operaci
 
 
 
-EJECCUCIÓN DEL PROGRAMA:
+EJECUCIÓN DEL PROGRAMA:
 
 ![dicc1copia](https://github.com/C4sp3r2222/nimbus-dictionary-generator/assets/55068123/1cfd94a8-559e-4ff6-a318-81b7c1747773)
 
 ![dicc2](https://github.com/C4sp3r2222/nimbus-dictionary-generator/assets/55068123/5a3e9e06-aa7f-4996-8e94-bc7ab9d9ca6b)
 
 
-OPCION 1:-----------------------------------------------------------------------------------------------------
+OPCION 1:--------------------------------------------------------------------------------------------------
+
 1. Crear un Diccionario con Palabras:
 
 ![dicc3copia](https://github.com/C4sp3r2222/nimbus-dictionary-generator/assets/55068123/13e147b5-82d5-4a14-a788-7ff9b9b8da5f)
@@ -39,7 +40,8 @@ OPCION 1:-----------------------------------------------------------------------
 
 
 
-OPCION 2:-----------------------------------------------------------------------------------------------------
+OPCION 2:--------------------------------------------------------------------------------------------------
+
 2. Añadir Caracteres a un Diccionario Dado:
 
 ![dicc6copia](https://github.com/C4sp3r2222/nimbus-dictionary-generator/assets/55068123/d2ac2b4e-afda-439a-87a1-7f33bd127ae2)
@@ -49,7 +51,8 @@ OPCION 2:-----------------------------------------------------------------------
 
 
 
-OPCION3:-----------------------------------------------------------------------------------------------------
+OPCION3:--------------------------------------------------------------------------------------------------
+
 3. Unir Diccionarios:
 
 
