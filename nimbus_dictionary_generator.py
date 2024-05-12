@@ -123,9 +123,9 @@ def merge_dictionaries(dictionary1_path, dictionary2_path, new_dictionary_name):
 
 def get_new_dictionary_name():
     """Obtiene el nombre para el nuevo diccionario."""
-    name = input(Fore.CYAN + "[+] Nombre del nuevo diccionario (Por defecto: diccionarios_unidos.txt):\n   Ej: Nuevo_diccionario.txt\n" + Fore.RESET)
+    name = input(Fore.CYAN + "[+] Nombre del nuevo diccionario (Por defecto: Nuevo_diccionario.txt):\n   Ej: Mi_Nuevo_diccionario.txt\n" + Fore.RESET)
     if not name:
-        name = "diccionarios_unidos.txt"
+        name = "Nuevo_diccionario.txt"
     return name
 
 def menu():
