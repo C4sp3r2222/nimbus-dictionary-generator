@@ -74,12 +74,12 @@ def generate_combinations_from_file(dictionary_path, characters, new_dictionary_
                         f_out.write(modified_line + '\n')  # Guarda las combinaciones de caracteres
                         total_lines_new += 1
 
-        print(Fore.YELLOW + f"[+] El diccionario final tendrá un total de {total_lines_new} líneas." + Fore.RESET)
+        print(Fore.YELLOW + f"[i] El diccionario final tendrá un total de {total_lines_new} líneas." + Fore.RESET)
         decision = input(Fore.CYAN + "[+] ¿Desea continuar con la creación del diccionario? (Si/No): " + Fore.RESET).lower()
         if decision in ['si', 'sí', 's']:
             print(Fore.GREEN + "[+] Diccionario generado con éxito:", new_dictionary_name + Fore.RESET)
         else:
-            print(Fore.YELLOW + "[+] Saliendo..." + Fore.RESET)
+            print(Fore.YELLOW + "[i] Saliendo..." + Fore.RESET)
     except Exception as e:
         print(Fore.RED + "[!] ERROR:", e + Fore.RESET)
 
@@ -113,7 +113,7 @@ def merge_dictionaries(dictionary1_path, dictionary2_path, new_dictionary_name):
         if decision in ['si', 'sí', 's']:
             print(Fore.GREEN + "[+] Diccionario generado con éxito:", new_dictionary_name + Fore.RESET)
         else:
-            print(Fore.YELLOW + "[+] Saliendo..." + Fore.RESET)
+            print(Fore.YELLOW + "[i] Saliendo..." + Fore.RESET)
     except Exception as e:
         print(Fore.RED + "[!] ERROR:", e + Fore.RESET)
 
@@ -150,18 +150,18 @@ def main():
         option = input(Fore.CYAN + "[+] Elige una opción: " + Fore.RESET)
 
         if option == '1':
-            print(Fore.YELLOW + "\n[+] Vamos a crear un diccionario con palabras.\n" + Fore.RESET)
+            print(Fore.YELLOW + "\n[i] Vamos a crear un diccionario con palabras.\n" + Fore.RESET)
             new_dictionary_name = get_new_dictionary_name()
             words = input(Fore.CYAN + "[+] Vamos a generar un nuevo diccionario, dime qué palabras se incluirán (separadas por comas):\n   Ej: Perro,Gato,Babosa\n" + Fore.RESET)
             generate_new_dictionary(words, new_dictionary_name)
         elif option == '2':
-            print(Fore.YELLOW + "\n[+] Vamos a añadir caracteres a un diccionario dado.\n" + Fore.RESET)
+            print(Fore.YELLOW + "\n[i] Vamos a añadir caracteres a un diccionario dado.\n" + Fore.RESET)
             dictionary_path = input(Fore.CYAN + "[+] Dime la ruta del diccionario base:\n   Ej: /usr/share/wordlists/diccionario.txt\n" + Fore.RESET)
             characters = input(Fore.CYAN + "[+] Indica carácter/s a añadir:\n   Ej: A,A1,A1*\n" + Fore.RESET)
             new_dictionary_name = get_new_dictionary_name()
             generate_combinations_from_file(dictionary_path, characters, new_dictionary_name)
         elif option == '3':
-            print(Fore.YELLOW + "\n[+] Vamos a unir dos diccionarios.\n" + Fore.RESET)
+            print(Fore.YELLOW + "\n[i] Vamos a unir dos diccionarios.\n" + Fore.RESET)
             new_dictionary_name = input(Fore.CYAN + "[+] Nombre del nuevo diccionario (Por defecto: diccionarios_unidos.txt):\n   Ej: diccionarios_unidos.txt\n" + Fore.RESET)
             if not new_dictionary_name:
                 new_dictionary_name = "diccionarios_unidos.txt"
@@ -171,7 +171,7 @@ def main():
         else:
             print(Fore.RED + "[!] ERROR: Opción no válida." + Fore.RESET)
     except KeyboardInterrupt:
-        print(Fore.YELLOW + "\n[+] Saliendo..." + Fore.RESET)
+        print(Fore.YELLOW + "\n[i] Saliendo..." + Fore.RESET)
 
 if __name__ == "__main__":
     main()
