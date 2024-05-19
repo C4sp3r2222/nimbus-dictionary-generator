@@ -24,7 +24,8 @@ EJECUCIÓN DEL PROGRAMA:
 
 ![dicc1copia](https://github.com/C4sp3r2222/nimbus-dictionary-generator/assets/55068123/1cfd94a8-559e-4ff6-a318-81b7c1747773)
 
-![dicc2](https://github.com/C4sp3r2222/nimbus-dictionary-generator/assets/55068123/5a3e9e06-aa7f-4996-8e94-bc7ab9d9ca6b)
+![nimbus2](https://github.com/C4sp3r2222/nimbus-dictionary-generator/assets/55068123/baef5f2d-4756-43a2-aa12-68d4f3fee261)
+
 
 
 OPCION 1:--------------------------------------------------------------------------------------------------
